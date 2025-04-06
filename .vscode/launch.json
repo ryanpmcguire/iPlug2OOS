@@ -1,36 +1,18 @@
 {
     "version": "0.2.0",
     "configurations": [
-        // {
-        //     "name": "(lldb) Launch Reaper VST2",
-        //     "type": "lldb",
-        //     "request": "launch",
-        //     "program": "/Applications/REAPER.app",
-        //     "args": ["${workspaceFolder}/TemplateProject/TemplateProject.RPP"],
-        //     "preLaunchTask": "build VST2 Debug",
-        // },
-        // {
-        //     "name": "(lldb) Launch Reaper VST3",
-        //     "type": "lldb",
-        //     "request": "launch",
-        //     "program": "/Applications/REAPER.app",
-        //     "args": ["${workspaceFolder}/TemplateProject/TemplateProject.RPP"],
-        //     "preLaunchTask": "build VST3 Debug",
-        // },
-        // {
-        //     "name": "(lldb) Launch Reaper AUv2",
-        //     "type": "lldb",
-        //     "request": "launch",
-        //     "program": "/Applications/REAPER.app",
-        //     "args": ["${workspaceFolder}/TemplateProject/TemplateProject.RPP"],
-        //     "preLaunchTask": "build AUv2 Debug",
-        // },
-        {
-            "name": "(lldb) Launch APP",
-            "type": "lldb",
-            "request": "launch",
-            "program": "~/Applications/TemplateProject.app",
-            "preLaunchTask": "build APP Debug"
-        }
+      {
+        "name": "Debug External Binary (vsdbg)",
+        "type": "cppvsdbg",  // <--- Important: use cppvsdbg
+        "request": "launch",
+        "program": "C:/Program Files/REAPER (x64)/reaper.exe",  // <--- Full path
+        "args": [],
+        "stopAtEntry": false,
+        //"cwd": "C:\\Path\\To\\WorkingDir",  // optional, where the process starts
+        "environment": [],
+        "console": "internalConsole",  // or "externalTerminal", "integratedTerminal"
+        "preLaunchTask": "cmake build"
+      }
     ]
-}
+  }
+  

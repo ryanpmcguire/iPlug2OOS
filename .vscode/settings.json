@@ -4,5 +4,6 @@
     "grunt.autoDetect": "off",
     "jake.autoDetect": "off",
     "gulp.autoDetect": "off",
-    "npm.autoDetect": "off"
+    "npm.autoDetect": "off",
+    "cmake.sourceDirectory": "C:/Users/Ryan/Desktop/IPlug2/iPlug2OOS/TemplateProject"
 }
